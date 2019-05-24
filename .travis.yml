@@ -10,7 +10,7 @@ services:
 
 before-install:
   - docker pull python
-  - docker run --name mypython python
+  - docker run -itd --name mypython python
   - docker exec -it mypython unittest tests.py
 
 
