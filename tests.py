@@ -13,7 +13,7 @@ class Mytest(unittest.TestCase):
 
 
 	def test_multiplication(self):
-		self.assertEqual(0, addition(0,2))
+		self.assertEqual(0, multiplication(0,2))
 
 
 
