@@ -1,5 +1,5 @@
 import unittest
-from mymathlib import addition
+from mymathlib import addition, multiplication, appendtolist 
 
 
 class Mytest(unittest.TestCase):
@@ -14,6 +14,10 @@ class Mytest(unittest.TestCase):
 
 	def test_multiplication(self):
 		self.assertEqual(0, multiplication(0,2))
+
+
+	def test_appendtolist(self):
+		self.assertEqual(["bonjour", "bonsoir", "bienvenue", "hello"], appendtolist("hello"))
 
 
 

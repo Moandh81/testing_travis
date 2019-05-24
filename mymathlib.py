@@ -13,3 +13,9 @@ def soustraction(x,y):
 	return x -y
 
 
+
+def appendtolist(item):
+	liste = ["bonjour", "bonsoir", "bienvenue"]
+	liste.append(item)
+	return liste
+
