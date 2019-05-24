@@ -1,17 +1,9 @@
 
 language: python
 
+
 python:
   - "3.7"
   - "3.6"
-
-services:
-  - docker
-
-before-install:
-  - docker pull python
-  - docker run -itd --name mypython python
-  - docker exec -it mypython unittest tests.py
-
 
 script: python tests.py
